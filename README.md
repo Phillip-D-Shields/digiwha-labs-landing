@@ -1,43 +1,23 @@
-# Svelte + Vite
+# 👾 Digiwha Labs
+> ## Welcome to the Digiwha Labs ecosystem. 
 
-This template should help get you started developing with Svelte in Vite.
+This is a collection of hyper-focused, privacy-first Progressive Web Apps (PWAs) designed to optimize the "biological machine.
 
-## Recommended IDE Setup
+## "What is a Digiwha?
+The name is a digital play on the Taniwha—powerful supernatural beings from Māori mythology. Taniwha are often protective guardians (kaitiaki) of specific places, or formidable creatures of the deep. Digiwha Labs acts as a digital guardian for your focus, health, and decision-making.
+## 🚀 The Mission
+In a world of bloated software and data-hungry platforms, Digiwha Labs builds tools that are:
+- Simple: One page, one purpose.
+- Private: No accounts, no servers. All data stays in your browser's LocalStorage.
+- Slappable: Fully PWA-compliant. Install them to your home screen for instant, offline access.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## 🛠️ The Stack
 
-## Need an official Svelte framework?
+This project is built with a "minimalist power" philosophy, using a modern, compiled stack to keep things lightning-fast:
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
-
-## Technical considerations
-
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+| Technology | Role | Why? |
+| :--- | :--- | :--- |
+| **Svelte** | Framework | A "disappearing" framework that compiles to raw JS. No virtual DOM overhead. |
+| **Tailwind CSS** | Styling | Utility-first styling for precise control over the pixel-art aesthetic. |
+| **daisyUI** | UI Library | Handles the component heavy-lifting while remaining fully themeable. |
+| **LocalStorage** | Database | 100% client-side persistence. Your data never leaves your device. |
