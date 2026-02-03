@@ -51,6 +51,9 @@
       features: ["Chaos Analysis", "Outcome Simulation"],
     },
   ];
+
+  let showInfo = false;
+  const toggleInfo = () => showInfo = !showInfo;
 </script>
 
 <div
@@ -63,19 +66,19 @@
       <img src={logo} alt="Digiwha Labs" class="w-full h-full object-cover" />
     </div>
 
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center text-center max-w-lg">
       <h1
-        class="text-5xl font-bold tracking-tighter uppercase mb-2 font-center"
+        class="text-5xl font-bold tracking-tighter uppercase mb-2"
         style="text-shadow: 4px 4px #ff7d5d;"
       >
         Digiwha Labs
       </h1>
       <div class="flex items-center gap-4">
-        <span class="h-[2px] w-12 bg-[#c792e9]"></span>
+        <span class="h-[2px] w-6 bg-[#c792e9]"></span>
         <p class="text-[#c792e9] uppercase tracking-widest text-md italic">
-          Bio-Digital Enhancement Suite
+          Bio-Digital Enhancement PWA Suite
         </p>
-        <span class="h-[2px] w-12 bg-[#c792e9]"></span>
+        <span class="h-[2px] w-6 bg-[#c792e9]"></span>
       </div>
       <p class="text-sm uppercase tracking-tighter text-center">
         Each installable as a PWA!<br />Slap it on your device<br
@@ -236,6 +239,47 @@
       Buy Me a Coffee
     </a>
   </footer>
+  <button 
+  on:click={toggleInfo}
+  class="fixed bottom-8 right-8 z-50 bg-[#c792e9] text-[#242933] font-black p-4 border-4 border-[#242933] shadow-[4px_4px_0px_0px_#9fe88d] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#9fe88d] transition-all"
+>
+  [?] SYSTEM_README
+</button>
+
+{#if showInfo}
+  <div class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#242933]/90 backdrop-blur-sm">
+    <div class="bg-[#1d212a] border-4 border-[#9fe88d] p-8 max-w-lg w-full shadow-[12px_12px_0px_0px_#ff7d5d] relative">
+      <button on:click={toggleInfo} class="absolute top-2 right-2 text-[#ff7d5d] hover:bg-[#ff7d5d] hover:text-[#242933] px-2 border-2 border-[#ff7d5d]">X</button>
+      
+      <h2 class="text-2xl font-black text-[#9fe88d] uppercase tracking-tighter italic">// WHAT IS A PWA?</h2>
+      <p class="text-xs uppercase tracking-wider mb-4 text-[#ff7d5d]">// It's a Progressive Web App!</p>
+      
+      <div class="space-y-6 text-sm">
+        <section>
+          <h3 class="text-[#c792e9] font-bold underline mb-1">LOCAL_HOSTED_DATA</h3>
+          <p>These apps are "Progressive Web Apps." Your data never touches a cloud. It lives in your browser's local cache. No accounts, no tracking, no leaks.</p>
+        </section>
+
+        <section>
+          <h3 class="text-[#c792e9] font-bold underline mb-1">HARDWARE_INSTALL</h3>
+          <p>Each PWA has an "Install App" button that will trigger the install protocol or present instructions on how to install on your device. This bypasses the corporate app stores and sits directly on your OS.</p>
+        </section>
+
+        <section>
+          <h3 class="text-[#c792e9] font-bold underline mb-1">OFFLINE_READY</h3>
+          <p>Once initialized, these tools work in deep-space or underground bunkers. No signal required for core functionality.</p>
+        </section>
+      </div>
+
+      <button 
+        on:click={toggleInfo}
+        class="mt-8 w-full bg-[#9fe88d] text-[#242933] font-bold py-2 border-2 border-[#242933] shadow-[4px_4px_0px_0px_#c792e9]"
+      >
+        ACKNOWLEDGE & CLOSE
+      </button>
+    </div>
+  </div>
+{/if}
 </div>
 
 <style>
