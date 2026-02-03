@@ -1,6 +1,6 @@
 <script>
   import logo from "./assets/logo.png";
-  const apps = [
+const apps = [
     {
       name: "FOCUS",
       tagline: "Time is a Resource",
@@ -18,6 +18,15 @@
       stats: { FLOW: 99, PROD: 30, ZEN: 95 },
       features: ["Box Breathing", "Vagal Nerve Reset", "Heart Rate Sync"],
       url: "https://breathe.digiwha-labs.com",
+    },
+    {
+      name: "DECIDE",
+      tagline: "Eliminate Analysis Paralysis", 
+      icon: "🎰", 
+      color: "#ffadad", 
+      stats: { FLOW: 60, PROD: 95, ZEN: 80 }, 
+      features: ["Visual Randomizer", "Outcome Simulation", "Bias Removal"],
+      url: "https://decide.digiwha-labs.com",
     },
   ];
 
@@ -42,13 +51,6 @@
       icon: "🤸",
       stats: { FLOW: "??", PROD: "??", ZEN: "??" },
       features: ["Desk Yoga", "Postures"],
-    },
-    {
-      name: "DECIDE",
-      tagline: "High Stakes Choice Support",
-      icon: "🧠",
-      stats: { FLOW: "??", PROD: "??", ZEN: "??" },
-      features: ["Chaos Analysis", "Outcome Simulation"],
     },
   ];
 
