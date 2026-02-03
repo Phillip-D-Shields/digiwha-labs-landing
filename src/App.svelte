@@ -200,7 +200,7 @@
               disabled
               class="btn btn-block bg-gray-700 text-gray-400 rounded-none border-none"
             >
-              LOCKED
+              COMING SOON
             </button>
           </div>
         </div>
