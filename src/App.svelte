@@ -27,29 +27,29 @@
       tagline: "Fuel the Biological Machine",
       icon: "💧",
       stats: { FLOW: "??", PROD: "??", ZEN: "??" },
-      features: ["Fluid Tracking", "Electrolyte Alerts"]
+      features: ["Fluid Tracking", "Electrolyte Alerts"],
     },
     {
       name: "DREAM",
       tagline: "Data-Mine Your Subconscious",
       icon: "🌙",
       stats: { FLOW: "??", PROD: "??", ZEN: "??" },
-      features: ["REM Cycles", "Lucid Triggers"]
+      features: ["REM Cycles", "Lucid Triggers"],
     },
     {
       name: "STRETCH",
       tagline: "Recalibrate Physical Form",
       icon: "🤸",
       stats: { FLOW: "??", PROD: "??", ZEN: "??" },
-      features: ["Desk Yoga", "Postures"]
+      features: ["Desk Yoga", "Postures"],
     },
     {
       name: "DECIDER",
       tagline: "High Stakes Choice Support",
       icon: "🧠",
       stats: { FLOW: "??", PROD: "??", ZEN: "??" },
-      features: ["Chaos Analysis", "Outcome Simulation"]
-    }
+      features: ["Chaos Analysis", "Outcome Simulation"],
+    },
   ];
 </script>
 
@@ -212,6 +212,29 @@
     class="mt-20 text-center text-[10px] text-gray-500 uppercase tracking-widest"
   >
     © 2026 Digiwha Labs // Neural Link Established
+    <br />
+    <a
+      href="https://www.buymeacoffee.com/phill_shields"
+      target="_blank"
+      rel="noreferrer"
+      class="btn btn-ghost btn-sm mt-4 opacity-40 hover:opacity-100 transition-all"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-3 w-3 text-error"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+        />
+      </svg>
+      Buy Me a Coffee
+    </a>
   </footer>
 </div>
 
