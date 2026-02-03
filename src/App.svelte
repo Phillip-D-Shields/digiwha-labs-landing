@@ -44,7 +44,7 @@
       features: ["Desk Yoga", "Postures"],
     },
     {
-      name: "DECIDER",
+      name: "DECIDE",
       tagline: "High Stakes Choice Support",
       icon: "🧠",
       stats: { FLOW: "??", PROD: "??", ZEN: "??" },
@@ -78,8 +78,8 @@
         <span class="h-[2px] w-12 bg-[#c792e9]"></span>
       </div>
       <p class="text-sm uppercase tracking-tighter text-center">
-        Now installable as a PWA!<br />Slap it on your device for offline access<br
-        />Free forever because we love you
+        Each installable as a PWA!<br />Slap it on your device<br
+        />Free forever because we love you<br /> 
       </p>
     </div>
   </header>
