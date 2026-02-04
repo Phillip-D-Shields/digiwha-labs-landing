@@ -1,6 +1,7 @@
 <script>
   import logo from "./assets/logo.png";
-const apps = [
+  
+  const apps = [
     {
       name: "FOCUS",
       tagline: "Time is a Resource",
@@ -9,6 +10,8 @@ const apps = [
       stats: { FLOW: 85, PROD: 92, ZEN: 40 },
       features: ["Pomodoro Timer", "Task Ghosting", "Deep Work Mode"],
       url: "https://focus.digiwha-labs.com",
+      // ADDED: Description field
+      desc: "A dedicated Pomodoro timer that stores your daily session count locally in your browser cache. It auto-resets the counter every 24 hours. No cloud, no distractions."
     },
     {
       name: "BREATHE",
@@ -18,6 +21,8 @@ const apps = [
       stats: { FLOW: 99, PROD: 30, ZEN: 95 },
       features: ["Box Breathing", "Vagal Nerve Reset", "Heart Rate Sync"],
       url: "https://breathe.digiwha-labs.com",
+      // ADDED: Description field
+      desc: "An interactive breathing pacer utilizing the 4-4-4-4 'Box Breathing' technique. Uses visual cues to help down-regulate your nervous system and reduce cortisol."
     },
     {
       name: "DECIDE",
@@ -27,6 +32,8 @@ const apps = [
       stats: { FLOW: 60, PROD: 95, ZEN: 80 }, 
       features: ["Visual Randomizer", "Outcome Simulation", "Bias Removal"],
       url: "https://decide.digiwha-labs.com",
+      // ADDED: Description field
+      desc: "A decision-making engine. Input your dilemma options, and the algorithm selects the outcome, effectively outsourcing your executive function to remove decision fatigue."
     },
   ];
 
@@ -112,12 +119,29 @@ const apps = [
           </div>
         </figure>
 
-        <div class="card-body p-5 gap-4">
-          <div class="flex flex-col">
-            <p class="text-[10px] uppercase text-[#c792e9] font-bold">
-              // Mission Statement
-            </p>
-            <p class="text-xs uppercase leading-tight">{app.tagline}</p>
+        <div class="card-body p-5 gap-4 relative">
+          <div class="flex justify-between items-center">
+            <div class="flex flex-col">
+              <p class="text-[10px] uppercase text-[#c792e9] font-bold">
+                // Mission Statement
+              </p>
+              <p class="text-xs uppercase leading-tight">{app.tagline}</p>
+            </div>
+
+            <div class="group/info relative ml-2">
+              <button class="text-[10px] font-bold text-[#ff7d5d] border border-[#ff7d5d] p-1 hover:bg-[#ff7d5d] hover:text-[#242933] cursor-help transition-colors">
+                [?] INFO
+              </button>
+
+              <div class="absolute bottom-6 right-0 w-64 p-3 bg-[#1d212a] border-2 border-[#ff7d5d] shadow-[4px_4px_0px_0px_#242933] z-50 opacity-0 invisible group-hover/info:opacity-100 group-hover/info:visible transition-all duration-200 pointer-events-none group-hover/info:pointer-events-auto">
+                <p class="text-[10px] text-[#ff7d5d] font-bold mb-2 uppercase border-b border-[#ff7d5d] inline-block">
+                  :: SYSTEM_DESC ::
+                </p>
+                <p class="text-xs text-gray-300 leading-snug">
+                  {app.desc}
+                </p>
+              </div>
+            </div>
           </div>
 
           <div class="bg-[#242933] p-3 border-2 border-[#c792e9] relative">
@@ -152,21 +176,10 @@ const apps = [
       </div>
     {/each}
 
-    <!-- coming soon -->
     {#each comingSoon as app}
       <div
         class="card w-80 bg-[#1d212a] border-4 border-gray-600 rounded-none opacity-60 grayscale relative overflow-hidden group"
       >
-        <!-- <div
-          class="absolute inset-0 z-10 flex items-center justify-center bg-[#242933]/40 backdrop-blur-[1px]"
-        >
-          <div
-            class="bg-[#ff7d5d] text-[#242933] font-black px-4 py-1 rotate-12 border-2 border-[#242933] shadow-[4px_4px_0px_0px_#242933]"
-          >
-            COMING SOON
-          </div>
-        </div> -->
-
         <div
           class="p-4 border-b-4 border-gray-600 flex justify-between items-center bg-[#242933]"
         >
@@ -287,7 +300,6 @@ const apps = [
 <style>
   :global(body) {
     background-color: #242933;
-    /* This makes the whole UI feel more like an old screen */
     background-image: linear-gradient(
         rgba(18, 16, 16, 0) 50%,
         rgba(0, 0, 0, 0.1) 50%
