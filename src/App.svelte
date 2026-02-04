@@ -10,7 +10,6 @@
       stats: { FLOW: 85, PROD: 92, ZEN: 40 },
       features: ["Pomodoro Timer", "Task Ghosting", "Deep Work Mode"],
       url: "https://focus.digiwha-labs.com",
-      // ADDED: Description field
       desc: "A dedicated Pomodoro timer that stores your daily session count locally in your browser cache. It auto-resets the counter every 24 hours. No cloud, no distractions."
     },
     {
@@ -21,7 +20,6 @@
       stats: { FLOW: 99, PROD: 30, ZEN: 95 },
       features: ["Box Breathing", "Vagal Nerve Reset", "Heart Rate Sync"],
       url: "https://breathe.digiwha-labs.com",
-      // ADDED: Description field
       desc: "An interactive breathing pacer utilizing the 4-4-4-4 'Box Breathing' technique. Uses visual cues to help down-regulate your nervous system and reduce cortisol."
     },
     {
@@ -32,7 +30,6 @@
       stats: { FLOW: 60, PROD: 95, ZEN: 80 }, 
       features: ["Visual Randomizer", "Outcome Simulation", "Bias Removal"],
       url: "https://decide.digiwha-labs.com",
-      // ADDED: Description field
       desc: "A decision-making engine. Input your dilemma options, and the algorithm selects the outcome, effectively outsourcing your executive function to remove decision fatigue."
     },
   ];
@@ -90,7 +87,7 @@
         <span class="h-[2px] w-6 bg-[#c792e9]"></span>
       </div>
       <p class="text-sm uppercase tracking-tighter text-center">
-        Each installable as a PWA!<br />Slap it on your device<br
+        Each one is a PWA!<br />Slap it on your device!<br
         />Free forever because we love you<br /> 
       </p>
     </div>
